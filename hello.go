@@ -4,6 +4,7 @@ import (
 	"fmt"
 	"io/ioutil"
 	"net/http"
+	"time"
 )
 
 func main() {
@@ -20,7 +21,10 @@ func main() {
 	// interfaceDemo()
 	// useLogs()
 	// generics()
-	httpCalls()
+	for true {
+		httpCalls()
+		time.Sleep(1 * time.Second)
+	}
 }
 
 func httpCalls() {
